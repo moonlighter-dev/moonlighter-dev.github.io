@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Wood Saw Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap" rel="stylesheet">
+
+<div id="page-wrapper">
+  <header id="header">
+    <div class="logo">
+      <img
+        id="header-img"
+        src="https://i.imgur.com/Zm8Posl.jpg"
+        alt="EZ Drugscreens Logo"
+        style="width:200px;height:200px;"
+      />
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#what_we_do">What We Do</a></li>
+        <li><a class="nav-link" href="#our_people">Our People</a></li>
+        <li><a class="nav-link" href="#find_us">Find Us</a></li>
+        <li><a class="nav-link" href="https://woodsawcompany.stihldealer.net/">Order Online</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="what_we_do">
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-walking"></i></div>
+        <div class="desc">
+          <h2>Walk-ins Monday thru Thursday</h2>
+          <p>
+            From noon to 5pm, come in to our office with your barcode or form. No appointment necessary for most collections! (Observed collections need an appointment.)
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-vial"></i></div>
+        <div class="desc">
+          <h2>Urine, Hair, Nails, BAT</h2>
+          <p>
+            We collect for all types of screening, including Breath Alcohol Testing. Urine tests about one month, Hair can test for up to 3 months, and Nails test for up to 6 months.
+          </p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-clock" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Prompt, Professional Service</h2>
+          <p>
+            Whether you are testing for Pre-employment, Post-accident, Random, Reasonable Suspicion, or a Court Order, your collection will be processed and sent immediately to the testing lab.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="dot_urine">
+      <iframe
+        id="video"
+        height="315"
+        src="https://www.youtube.com/embed/ajSxIgUS9BY?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id="pricing">
+      <div class="pricing" id="urine">
+        <div class="level">Urine Collection <br>& Screen</div>
+        <h2>$50</h2>
+        <ul>
+          <li>DOT or non-DOT</li>
+          <li>Results sent to the purchasing party</li>
+          <li>Negative results available in 2 business days</li>
+          <li>Formfox and Quest eScreen supported</li>
+          <li>Walk-ins available for most collections</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="pricing" id="bat">
+        <div class="level">Breath Alcohol Test <br>(BAT)</div>
+        <h2>$35</h2>
+        <ul>
+          <li>Breathalyzer machine on-site for convenience</li>
+          <li>Call for post-accident appointment outside of office hours</li>
+          <li>Walk-ins available during office hours</li>
+          <li>Results available immediately</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="pricing" id="hair_nail_5">
+        <div class="level">Hair/Nail 5-Panel Collection</div>
+        <h2>$150</h2>
+        <ul>
+          <li>Must have enough hair or nail to collect a sample</li>
+          <li>Removal of sample will not significantly affect donor appearance</li>
+          <li>Results sent to purchasing party</li>
+          <li>Negative results available in 3 business days</li>
+        </ul>
+        <button class="btn">Select</button>
+      </div>
+      <div class="pricing" id="hair_nail_10">
+        <div class="level">Hair/Nail 10-Panel Collection</div>
+        <h2>$200</h2>
+        <ul>
+          <li>Must have enough hair or nails to collect sample</li>
+          <li>Same sample size as 5-panel, more tests run</li>
+          <li>Negative results available in 4 business days</li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="btn">Select</button>
+      </div>
+     </section>
+      <section id="hero">
+    <h2>Get Tech Tips from Brian</h2>
+    <form id="form" action="https://www.woodsaw.co/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Submit" class="btn" />
+    </form>
+  </section>
+    
+    
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2021, EZ Drug Screens</span>
+    </footer>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

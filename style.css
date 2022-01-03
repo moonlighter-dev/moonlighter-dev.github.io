@@ -1,0 +1,119 @@
+h1,h2,h3,h4,h5,h6 {font-family: "Megrim"}
+body {font-family: "Open-Sans"}
+
+/*headings in welcome section*/
+h1{
+  color:#f2f2f2;
+  font-size: 60px;
+  padding-left: 15%;
+  padding-top: 10%;
+}
+
+h2{
+  color:#f2f2f2;
+  font-size: 40px;
+  padding-left: 15%;
+  margin: 0;
+}
+
+/*page headings*/
+h3{
+  color:#333;
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
+}
+
+#profile-link{
+  padding-left: 15%;
+  
+}
+
+/*background image for welcome section with shading*/
+#hero-image{
+  background: var(--color-shadow);
+    background-image: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0) 65%,
+        rgba(0,0,0,0.9)
+      ),
+    url(images/header-bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#welcome-section{
+  width: auto;
+  height: 100vh;
+  
+}
+
+body {
+  margin: 0;
+  font-family: Open-Sans, Arial, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+}
+  
+.topnav a {
+  float: left;
+  display: block;
+  font-family: "Megrim";
+  font-size: 22px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+}
+  
+.topnav a:hover {
+  background-color: rgb(212, 105, 105);
+}
+
+.topnav-right {
+  float: right;
+}
+
+.container {
+  display: block;
+
+}
+
+#projects{
+  width: 100%;
+  min-height: 100%vh;
+  margin: auto;
+}
+
+.project-tile{
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+footer{
+  text-align: right;
+  padding: 5%;
+}
+
+/*Responsive layout*/
+@media (max-width: 600px) {
+  .grid-container  {
+    display: flex;
+  }
+}

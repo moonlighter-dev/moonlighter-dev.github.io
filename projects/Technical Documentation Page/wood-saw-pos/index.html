@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Wood Saw POS</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header id="nav-header">Wood Saw POS</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li>
+     <a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+    <li>
+     <a class="nav-link" href="#Ringing_Up_a_Sale">Ringing Up a Sale</a></li>
+    <li>
+     <a class="nav-link" href="#Parking_and_Unparking_Sales">Parking and Unparking Sales</a></li>
+    <li>
+     <a class="nav-link" href="#Completing_Sales">Completing Sales</a></li>
+    <li>
+     <a class="nav-link" href="#Voiding_Sales">Voiding Sales</a></li>
+    <li>
+     <a class="nav-link" href="#Processing_Returns">Processing Returns</a></li>
+    <li>
+     <a class="nav-link" href="#Ringing_Up_Items_without_Barcodes">Ringing Up Items without Barcodes</a></li>
+    <li>
+     <a class="nav-link" href="#Ringing_Up_Units">Ringing Up Units</a></li>
+    <li>
+     <a class="nav-link" href="#Selling_Gift_Cards">Selling Gift Cards</a></li>
+    <li>
+      <a class="nav-link" href="#Layaways">Layaways</a></li>
+    <li>
+     <a class="nav-link" href="#Consignments">Consignments</a></li>
+    <li>
+     <a class="nav-link" href="#Special_Orders">Special Orders</a></li>
+    <li>
+     <a class="nav-link" href="#Opening_Procedures">Opening Procedures</a></li>
+    <li>
+     <a class="nav-link" href="#Closing_Procedures">Closing Procedures</a></li>
+    <li>
+     <a class="nav-link" href="#Creating_Paid_Outs">Creating Paid Outs</a></li>
+    <li>
+     <a class="nav-link" href="#Troubleshooting">Troubleshooting</a></li>
+    <li>
+     <a class="nav-link" href="#Updating_Prices">Updating Prices</a></li>
+    <li>
+     <a class="nav-link" href="#Taking_Inventory">Taking Inventory</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>
+        Wood Saw POS is based on a completely free software program called Cash Register, written by Dale Harris. Dale created Cash Register for individuals, businesses, and educators to have simple software to ring up transactions.
+      </p>
+      <p>
+        Dale has an extensive <a href="http://keyhut.com/posmenu.htm">User's Guide</a> for every process of setting up a Cash Register program in any country, on virtually any computer (no tablets or phones, though). Dale's guide is thorough - probably too detailed for one of us trying to quickly figure out how to ring up a damn gift card or cash out a layaway!
+      </p>
+      <p>
+        I set up this simplified user's guide for the occasional brain fart that we all experience. I plan to <a href = "mailto: daleharris@prodigy.net">send Dale</a> pictures of us using the Cash Register program, and also encourage him to continue building accounts receivable so that someday we can break the shackles of Quickbooks.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+      <ul>
+        <li>
+          A general understanding of what a computer is.
+        </li>
+        <li>
+          Good working knowledge of keyboard layout.
+        </li>
+        <li>
+          Familiar with how to find a barcode.
+        </li>
+      </ul>
+      <p>
+        The POS Program uses the following key commands, so identify them now:
+        <code> F3, F11, TAB, Enter, +
+        </code>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Ringing_Up_a_Sale">
+    <header>Ringing Up a Sale</header>
+    <article>
+      <p>
+        The first option on the main menu of Wood Saw POS is "Purchase." When you select it, your cash register will be able to ring up purchases from customers. This is the main screen from which you will operate, and after completing a sale, the program opens another sale immediately.
+      </p>
+      <p>
+        After you select "Purchase," you will be prompted to enter your employee number. If you are helping another associate ring up a sale, you may enter either number - keeping in mind that if there is an issue with the transaction you may both be asked to remember what happened.
+      </p>
+      <p>
+        Once the cash register is open, you may ring up items using a barcode scanner. Most parts and items have a bar code, and there is also a bar code cheat sheet that includes a lot of commonly purchased items that don't have a barcode (files & handles, for example). If you scan something twice, it will automatically increase the quantity.
+      </p>
+      <p>
+        Notice that you have the option to press TAB to return to the previously scanned item. This is helpful if you need to make adjustments to price, quantity, or the description of the product being purchased. You may also press F11 to go back if you have missed something, before you finish entering in the item.
+      </p>
+      <p>
+        For other mistakes, you may need to use the Void function (F5) to void a single line, or even to void the entire transaction and start over. If you already completed the transaction (receipts printed), then see the <a href="#Voiding_Sales">Voiding Sales</a> section on how to fix it.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Parking_and_Unparking_Sales">
+    <header>Parking and Unparking Sales</header>
+    <article>
+      <p>
+        When you select "Purchase," you also have access to the parked sale menu by pressing F6. This menu allows you to bring up repairs, special orders, and other prepared transactions. At Wood Saw, we use the last 4 digits of the customer's phone number to park a sale.
+      </p>
+      <p>
+        When you press F6, you see options to park your current sale, or void your current sale to retrieve a parked sale. To retrieve a parked sale, simply enter the last 4 digits of the customer's phone number and the sale will come up. The parked sales are listed in the menu for your convenience, and you should have a repair tag with their phone number on it and a detailed list of repairs. Quickly check over the parked ticket to make sure you are giving the customer all of the units they have had repaired, along with any special order items they may have. Once verified, you may finish the transaction like a normal sale.
+      </p>
+      <p>
+        If you are <em>parking a sale,</em> it's a good idea to quickly park the sale and retrieve it to add parts, labor or units. The POS will let you know if the customer already has a parked ticket, so you can add to that ticket.
+      </p>
+      <p>
+        To park a sale with items on it, it's best NOT to use the F6 menu. Instead, press + to bring up the subtotal menu. Notice that POS asks you if you want to complete the sale or park it for future reference. Choose the option to park it, and enter the last 4 digits of the customer phone number. POS will park the sale and print you a handy-dandy receipt of the parked sale. This is always helpful for customers because they like to ask how much their bill will be before they arrive to pick up their equipment. The receipt always includes tax.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Completing_Sales">
+    <header>Completing Sales</header>
+    <p>
+        Once you have finished ringing up the items for purchase, pressing + will take you to the next step in the transaction. To finish the sale, select "Complete and print receipt." The customer selection menu will come up. If it is a simple cash transaction, press TAB to escape through. Otherwise you may enter a portion of the customer name and hit F3 to search. This is where you will enter tax exempt information if applicable. Once you have hit TAB or entered your customer information, the POS will display the correct total on the screen and prompt you to select a method of payment.
+      </p>
+      <p>
+        Methods of payment are listed as follows:
+        <ol>
+          <li>
+            Cash </li>
+          <li>
+            Check </li>
+          <li>
+            Credit Card </li>
+          <li>
+            Debit Card </li>
+          <li>
+            Gift Card </li>
+          <li>
+            </li>
+    </ol>
+      <p>
+        IMPORTANT: Select the method of payment for the transaction. Note that option 6 is blank and is used for customer charges. If you complete the transaction with the wrong payment type, it needs to be voided and redone. For our purposes, Credit Card and Debit Card are interchangeable.
+      </p>
+      <p>
+        Every transaction prints two receipts, one for the customer and the other for our box. Credit card receipts should be stapled to the POS receipts. For checks, a transaction number will appear to write on the back of the check so it will be easy to track.
+      </p>
+  </section>
+  <section class="main-section" id="Voiding_Sales">
+    <header>Voiding Sales</header>
+    <article>
+      <p>
+        You can void a sale in the following circumstances:
+        <ul>
+          <li>
+            You completed a sale with the wrong payment method. Customers interchange the term "charge" and "credit card" and this leads to a lot of confusion with our accounts receivable customers.</li>
+          <li>
+            The customer returns an item the same day they bought it. </li>
+          <li>
+            You rang up an invoice the same day that needs something removed. It is often better to just void the invoice and redo the transaction correctly.
+          </li>
+      </ul>
+      </p>
+    <p>
+      To access the Voids feature, return to the main menu using ESC. Select Voids. The POS will automatically bring up the last transaction that you rang up. Use the menu at the bottom of the screen to cycle to the transaction you wish to void, and then hit TAB to void the transaction. Two receipts will print, which you can keep with the original receipt.
+    </p>
+    </article>
+  </section>
+  <section class="main-section" id="Processing_Returns">
+    <header>Processing Returns</header>
+    <article>
+      <p>
+        When a customer is returning a purchase they made on a previous day, you will need to use the Return/Payout menu to process it. Select this option from the main menu, and the POS will ask you for your employee number and the number of the employee who ran the original sale.
+      </p>
+      <p>
+        Once you have identified yourself, POS will open a return sale, which looks almost exactly like a regular sale, except all items and sales tax are removed from the register instead of added. Ring up each item that is being returned and close the sale just like you would a normal sale. 
+      </p>
+      <p>
+        It's IMPORTANT to remember to use the correct payment method for returns as well. If the item was purchased with a credit card, you will first perform a return on the credit card machine. If it is processed successfully, you can use "Credit Card" as the payout option. Debit Cards usually do not accept returns. If the item was purchased with cash, check, or gift card, the item can be returned for cash. If the item was charged to a customer, you can refund to customer charge.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Ringing_Up_Items_without_Barcodes">
+    <header>Ringing Up Items without Barcodes</header>
+    <article>
+      <p>
+        Some items do not have barcodes by nature. Units have barcodes on them, but most barcodes contain the serial number of the unit, which is handy when you are preparing an invoice that needs to be filed under warranty. In this case, you can find the unit by hitting * and typing the model name and number with no spaces (ex: BG50). The system will perform a brief search and will locate the details for you. In some cases, when you are distinguishing between an MS180 and MS180CE, you may need to select "Keep searching" in order to get to the correct unit. Press enter until your cursor is under the Description and delete everything but the model number. Then you can scan the unit's serial number, so it looks like: <code>BG50 # 152168213</code> For more on selling units, see the <a href="#Ringing_Up_Units">next section.</a>
+      </p>
+      <p>
+        Kombi attachments are not commonly scannable, because the box that they came in has been opened for assembly. In addition, all KM attachments have regular part numbers, so they are not easily accessible with * search. <code>* search uses all Stihl part numbers.</code> To quickly find a KM attachment in the stock table, press F1 from the Sale menu. Press TAB to search the stock table, and choose Description. You may then enter "HT-KM" in the space available. Again, the system will perform a search of all items.
+      </p>
+      <p>
+        For all parts, it's a good idea to look up parts without a barcode using * search. The system searches consecutively through the stock table, so a part that starts with 0000 will be found a lot faster than a part that starts with 9999. However, the whole search takes less than 20 seconds.
+    </article>
+  </section>
+  <section class="main-section" id="Ringing_Up_Units">
+    <header>Ringing up Units</header>
+    <article>
+      <p>
+        Finding units in the POS system is covered adequately in the <a href="#Ringing_Up_Items_without_Barcodes">Ringing Up Items without Barcodes</a> section. However, you may need a checklist to ensure you are ringing up units properly.
+      </p>
+      <p>
+        When ringing up a unit, you should have the following:
+        <ol>
+          <li>
+          The correct unit and price to be charged to the customer. In the description, the unit model and serial number should be clearly visible.</li>
+          <li>
+            If there are multiple units, or there are additional items with serial numbers to be warranties (i.e. Lithium ion batteries), enter 99 with 0.00 price and put the serial numbers in the Description. These should be immediately below the units to which they apply.      
+          </li>
+          <li>
+            When charging the customer, enter their full name, mailing address, and tax exempt information on the customer selection screen. For charge customers, you can simply search for them and use the information that is in the system.</li>
+          <li>
+            Be sure to confirm their purchase and ask if they need any more items to be added before you close the ticket.</li>
+      </ol>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Selling_Gift_Cards">
+    <header>Selling Gift Cards</header>
+    <article>
+      <p>We sell gift cards in our POS System in the following situations:
+      <ul>
+        <li>To help customers layaway items for future purchase</li>
+        <li>To reimburse customers for consignments</li>
+        <li>As actual gift cards!</li>
+      </ul>
+      </p>
+    <p>
+      Layaways and consignments will be covered in their corresponding sections. In order to sell a gift card, press F10 from the POS Sales screen. The system flash DELAY as it generates a random number to use for your gift card. Once this number is generated, use F11 to go back and highlight the number. </p>
+    <p>
+      Instead of numbers, we use the customer's first initial and last name, followed by a one-word description of what it's being used for. Examples:
+      <code>B PACE LAYAWAY
+        W MORRIS SOLD UNIT
+        K HODGES GIFT</code>
+    There is a fixed length for gift cards, so longer combinations may need to be abbreviated further.</p>
+     <p>
+       Once you have entered the gift card name, follow with the amount. Gift cards are not taxed, and they can only be sold for whole dollar amounts. The system will print a physical gift card as well as receipts for the purchase. This gift card will show a short message, followed by the gift card name and the amount stored on it. The customer can present it to their loved one, who can then share it with us. However, the most important thing to have is the gift card name, which enables you to identify the correct gift card in the system.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Layaways">
+    <header>Layaways</header>
+    <article>
+      <p>
+        Layaways are basically small savings accounts that customers keep with us to accumulate toward a future purchase. When customers ask about opening a charge account with us, the best thing to do is suggest a layaway. (Charge accounts are merely conveniences we provide for business owners, and are not intended to be any form of credit.)
+      <p>
+        We set up layaways by creating a gift card and adding amounts until the customer wishes to complete their purchase. We also keep the gift card on hand, instead of giving it to the customer. To set up a layaway, be sure you are following this set of steps:
+        <ol>
+          <li>
+            Prepare a complete quote for all the items the customer wishes to lay away. You may use paper and pen, or print a hold ticket to use as reference.</li>
+          <li>
+            Once you have the total cost of the layaway, ask the customer how much they wish to pay. Sell a gift card for that amount. Use the customer's first initial, last name, and the word LAYAWAY on your gift card.</li>
+          <li>
+            Attach the gift card to the quote and place in a plastic bag in the layaway box in the safe.</li>
+          <li>
+            When the customer returns to pay on their layaway, simply locate their layaway in the safe, and sell a gift card again. When you enter their card name, the system should recognize it and ask if you wish to add to the gift card balance. Choose yes and proceed. If the system does not ask, check to see that you entered the gift card name correctly. Replace the gift card in the bag with the new gift card, since it has an updated total.</li>
+          <li>
+            When the customer is ready to purchase, ring up the sale (or pull it up if it is on hold), and use Gift Card as the tender. Apply the full amount of the gift card, and charge the customer the remainder of the balance due.</li>
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Consignments">
+    <header>Consignments</header>
+    <article>
+      <p>
+        When we purchase an old saw for parts, we use a paid out for "used parts." More often, a customer brings in a unit in good condition that they would like for us to sell. We offer to sell this for the customer for a small fee, which is a consignment. For used units on consignment, we wish to avoid unnecessary sales tax and warranty issues, so we make it clear to the customers that we are merely selling it for someone else.
+      </p>
+      <p>
+       To achieve this with the POS system, we sell a gift card to the purchasing customer and cash it out for the selling customer. This allows us to take all forms of tender (cash, check, credit card) without penalty to us.
+      </p>
+      <p>There are some helpful thins to remember when setting up a consignment purchase. Don't forget to take out our fee when cashing out the gift card. Gift cards are cashed out from the returns system, not the sales system. So when you are cashing out to pay a seller, select "Returns."</p>
+      <p>
+        We always use Cash as the payment option when cashing out gift cards. The receipt will read double your cash (it turns $100 into $200), so if you see this, don't be alarmed. Cash out the gift card when the seller comes to pick up the cash. This reduces the amount of cash we have in the safe.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Special_Orders">
+    <header>Special Orders</header>
+    <article>
+      <p>
+        Sometimes customers wish to purchase items that we don't currently have in stock. In this case, we take down their name and number, and list the item that they want on our purchase list in red ink. Usually, we find these items when we are receiving the order, in which case we call the customer and place the item on the special order shelf.
+      </p>
+      <p>
+        Usually, this is enough for the transaction to go smoothly. However, sometimes the customer wishes to order a more expensive item like a unit, or they tell you they'd like to pay for it up front. In either of these cases, you can sell them a gift card using the following instructions.
+      </p>
+      <p>
+        If the item is expensive, request that the customer pay for the cost of stocking the item. That way if they never come pick it up, we are not out any money. We can ALWAYS cash out a gift card if they change their mind, for instance if the item is put on backorder or takes too long to come in.
+      </p>
+      <p>
+        If the customer wants to pay for the full invoice up front, ring up the items as a hold ticket. Then sell them a gift card for the entire amount (don't forget to round up to the nearest dollar!). Once they come in to pick up the item, you can pull up their hold ticket and cash it out with the gift card, handing them the change.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Opening_Procedures">
+    <header>Opening Procedures</header>
+    <article>
+      <p>First thing to do every morning is boot up the computers and get Wood Saw POS up and running for the day!</p>
+        <ol>
+          <li>
+            Boot RIGHT-COUNTER computer</li>
+          <li>
+            Press any key to start GLOBAL REG (REGISTER X) If GLOBAL REG does not start, double-click the icon for it on the small monitor</li>
+          <li>
+            Opening cash: 100.00 (hit enter)</li>
+          <li>
+           Close the window or 
+            <ul>
+             <li>
+               7 Close Register</li>
+             <li>
+               3 Exit program/no print/no erase</li>
+             <li>
+               Close the window</li>
+            </ul>
+           <li>
+             Double-click Cash Register to open LOCAL REG (REGISTER R)</li>
+           <li>
+             Boot up LEFT-COUNTER computer and double-click Cash Register to open LOCAL REG (REGISTER L)</li> 
+            <li> 
+             Now you can use the cash register on RIGHT-COUNTER & LEFT-COUNTER computers!</li>
+      </ol>
+    </article>
+  </section>
+   <section class="main-section" id="Closing_Procedures">
+    <header>Closing Procedures</header>
+    <article>
+      <ol>
+        <li>
+          Insert backup USB Drive from safe</li>
+        <li>
+          Close Quickbooks
+          <ul>
+            <li>Choose “Backup Now”</li>
+            <li>Select “Finish”</li>
+            <li>Agree to delete old backups</li></ul></li>
+         <li>
+           Go to Cash Register R Menu
+           <ul>
+             <li>Select 7 – Close Register</li>
+             <li>Select 2 – Print/Save/Erase</li>
+             <li>Close (or type EXIT)</li>
+             <li>Repeat with Cash Register L if any sales were rung on it</li></ul></li>
+         <li>
+           Open Global Register (Cash Register X)
+           <ul>
+             <li>Select 7 – Close Register</li>
+             <li>Select 2 – Print/Save/Erase</li></ul></li>
+        <li>
+          Settle CC Machine</li>
+        <li>
+          Collect ALL Journals, Settlements, Reports, & Monies in bank bag</li>
+        <li>Shut down RIGHT-COUNTER computer</li>
+        <li>Put USB Drive & bank bag in safe.... DONE!</li>
+    </article>
+  </section>
+   <section class="main-section" id="Creating_Paid_Outs">
+    <header>Creating Paid Outs</header>
+    <article>
+      <p>
+      Paid Outs are a special type of transaction that document money leaving the register to reimburse expenses paid for the shop. For example, if someone buys some batteries with their own cash, they can receive reimbursement from the register by entering their purchase as a paid out.</p>
+      <p>
+        To access the paid out screen, choose Return/Paid Out from the main menu. You will be prompted to specify whether you are processing a return of a paid out. Once you select paid out, you will see a register screen that looks similar to sales and return screens.</p>
+      <p>
+        To enter the details for your payout, press F1 to view the stock table. The first two items are options to select for paid out - one is USED PARTS, and the other is SUPPLIES. These are marked PAID OUT ONLY so they can be separated from other types of merchandise. The most common payout is for supplies.
+      </p>
+      <p>
+        After selecting your item type, enter the TOTAL amount of your receipt, including tax. The total of your payout should appear in big numbers in the bottom right quarter of the screen. All payouts are processed in cash, so once you enter the transaction, two receipts will print and you can remove the cash from the register.
+      </p>
+      <p>
+        Attach the receipt of purchase to one copy of your paid out and place it in the register if it will fit, or in the receipts box if it is too large to fit in the register. All purchase receipts are saved to process with other expenses at the end of the year.
+      </p>
+    </article>
+  </section>
+   <section class="main-section" id="Troubleshooting">
+    <header>Troubleshooting</header>
+    <article>
+      <p>
+        Here is a selection of common problems that you may encounter when using the POS System here at Wood Saw.
+      <table>
+        <tr>
+          <th>Problem</th>
+          <th>Solution</th>
+        </tr>
+        <tr>
+          <td>More than two receipts are printing when you complete a transaction.</td>
+          <td>Find the receipt print window hidden in the bottom taskbar. Click and CLOSE each instance of the receipt printer that you find, then double-click on the Cash Register Receipt Printer icon.</td>
+        </tr>
+        <tr>
+          <td>The Left-Counter and/or Shop registers will not work.</td>
+          <td>Make sure that the Right-Counter register is on and that the wifi is working. If you aren't sure, you can turn them off, wait a couple of minutes, and turn them on again.</td>
+        </tr>
+         <tr>
+           <td>Quickbooks refuses to load, and says that it is already open.</td>
+           <td>Press <code>Ctrl + Alt + Del</code> and then open Task Manager. Click "Processes" and look for anything resembling <code>"qb.exe"</code> highlight and stop the process. Try loading QB again.</td>
+        </tr>
+         <tr>
+           <td>Oh No! I ran out of paper while my reports were printing! What do I do?</td>
+           <td>You can close all the registers multiple times, until you close register X. If paper runs out while the X report is printing, make a note to add the R and L summary reports together to compensate.</td>
+        </tr>
+      </table>
+      <p>
+        Still having trouble? Call me at <num>(409)594-2018</num>, and I will come take a look!
+      </p>
+    </article>
+  </section>
+   <section class="main-section" id="Updating_Prices">
+    <header>Updating Prices</header>
+    <article>
+      <p>
+        The stock table (or list of items we carry) is managed as a huge list of about 15,000 items. Some items may have incorrect information, and the most annoying of those is incorrect pricing. If you are ringing up an item and having to correct the price (which means scanning and pressing tab to edit the item), you have the option of correcting the information for good in the stock table.
+      </p>
+      <p>
+        The only thing that can't be fixed is if an item regularly won't ring up using a barcode. In that case, you may want to review "Ringing up Items without a Barcode" so you can ring those items up more quickly.
+      </p>
+      <p>
+        To update a price, select File Maintenance from the Main Menu. From the next menu, select Stock Table. You will have to enter in the password a couple of times, and you will be given a warning about changing items in the stock table. In short, you don't want to edit items that you are ringing up, and it's best to edit items when the registers are not in use.
+      </p>
+      <p>
+        A pink screen will flash over while the stock table loads. Don't be concerned if it takes a while, you don't need to press anything. Once the stock table is loaded, you can use the menu at the bottom to Search for the item you wish to change. If it has a barcode, this is the way to go. You can also easily look up items using Vendor Stock # (Stihl part numbers) or even description.
+      </p>
+      <p>
+        Once you have found the item you wish to update, press Enter. Press enter until the amount under R Price is highlighted, and change it to the correct amount. Also change the amount of S Price. This is a "sale price" and we use the same amount for both options at Wood Saw.
+      </p>
+      <p>
+        All changes to the stock table are automatically saved, so you can press Esc until you are returned to the main menu. Test the item to make sure it brings up the correct price.
+      </p>
+      <p>
+        In order for your correction to be saved even if we have to replace the whole stock table (when there is a store-wide pricing update, for example), open the stock table spreadsheet from the desktop shortcut. Find your item and update the price there. Save and you're done!
+      </p>
+    </article>
+  </section>
+   <section class="main-section" id="Taking_Inventory">
+    <header>Taking Inventory</header>
+    <article>
+      <p>
+        At this time, we do not take inventory within the POS, nor do we keep up with how many items we stock in the POS.
+      </p>
+      <p>
+        When we take inventory, there will be a spreadsheet named Inventory 20XX to open and work with. This spreadsheet will have a couple of columns - one for the Barcode, and another for the quantity. We will use the stock table spreadsheet to determine the value of all the items we are inventory-ing.
+      </p>
+      <p>
+        As a two-person job, inventory is really easy. One person holds the barcode scanner and scans each individual item. They count the items and report to the other person, who enters the quantity into the computer. The computer person then moves the cursor to the next open space for the scanner to scan.
+      </p>
+      <p>
+        Take care to avoid counting anything twice. However, you can scan the same number several places in the store without causing a problem. For this reason, focus on scanning and counting a particular AREA, rather than hunting down an item in multiple places. Once you are finished with the area, mark it using a post-it or other brightly-colored removable item, so we know it's done.
+      </p>
+      <p>
+        The inventory file is shared on all computers, so the computer person can use any computer they like. The only limitation is that the inventory file may only be used at one computer at a time. If there are more than 2 employees who wish to work on inventory, the additional people can count areas where the items do not have barcodes (i.e. units).
+      </p>
+    </article>
+  </section>
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

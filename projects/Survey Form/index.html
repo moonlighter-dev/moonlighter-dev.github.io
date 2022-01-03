@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Project Interview - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Tell Me About Your Project</h1>
+    <hr>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to describe your project! I value your time and effort and I will respond to your request within 24 business hours, either to offer my services, or refer you to a better solution.
+    </p>
+  </header>
+<form id="survey-form">
+    <div class="form-group">
+      <p>Which option best describes your level of tech savvy?</p>
+      <select id="dropdown" name="level" class="form-control" required>
+        <option disabled selected value>Select one</option>
+        <option value="freelance">Freelance Developer</option>
+        <option value="open-source">Open Source Dev Team</option>
+        <option value="tech-biz">Computer Savvy Tech-Related Business</option>
+        <option value="non-tech">Computer Savvy Non-Tech Business</option>
+        <option value="learner">Not Computer Savvy but Learning</option>
+        <option value="luddite">Not Even Interested in Computers</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+<br>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Please rate the level of control/involvement you will have in the project. (99 being total - I will be your slave, 1 being negligible, I will carry you completely)</label
+      >
+      <br>
+      <input
+        type="number"
+        name="control-degree"
+        id="number"
+        min="1"
+        max="99"
+        class="form-control"
+        placeholder="1-99"
+      />
+    </div>
+    <div class="form-group">
+      <p>
+        What is the <em>primary</em> purpose of the project or business?
+      </p>
+      <select id="purpose" name="purpose" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="communication">Communication</option>
+        <option value="education">Education</option>
+        <option value="self-improvement">Self-Improvement</option>
+        <option value="spiritual-development">Spiritual Development</option>
+         <option value="volunteer-service">Volunteer Service</option>
+        <option value="notsure">Not Sure</option>
+      <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What skills are needed for the successful completion of your project?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="areas"
+          value="leadership"
+          type="checkbox"
+          class="input-checkbox"
+        />Leadership</label
+      >
+      <label>
+        <input
+          name="areas"
+          value="website creation"
+          type="checkbox"
+          class="input-checkbox"
+        />Website Creation</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="Javascript"
+          type="checkbox"
+          class="input-checkbox"
+        />Javascript</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="excel"
+          type="checkbox"
+          class="input-checkbox"
+        />Excel</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="strategy"
+          type="checkbox"
+          class="input-checkbox"
+        />Strategy</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="documentation"
+          type="checkbox"
+          class="input-checkbox"
+        />Documentation</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="troubleshooting"
+          type="checkbox"
+          class="input-checkbox"
+        />Troubleshooting</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="Associate Training"
+          type="checkbox"
+          class="input-checkbox"
+        />Associate Training</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="Management Training"
+          type="checkbox"
+          class="input-checkbox"
+        />Management Training</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="systems design"
+          type="checkbox"
+          class="input-checkbox"
+        />Systems Design</label
+      >
+      <label
+        ><input
+          name="areas"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+        />Other</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>If you selected "Other" anywhere above or have further comment, please elaborate here:</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+   <div class="form-group">
+      <p>Have you previously employed technical support for this project?</p>
+      <label>
+        <input
+          name="contact"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="contact"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+         <label>
+    </div>
+  <p>
+    Please share your name and email address.
+    <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    
+  <div class="form-group">
+      <p>May I contact you to gather additional details if needed?</p>
+      <label>
+        <input
+          name="contact"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes, please!</label
+      >
+      <label>
+        <input
+          name="contact"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No, thank you.</label
+      >
+         <label>
+    </div>
+    <br>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
