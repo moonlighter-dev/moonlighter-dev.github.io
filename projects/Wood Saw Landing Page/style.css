@@ -44,7 +44,7 @@ a {
   text-transform: uppercase;
   border: 3px black solid;
   border-radius: 2px;
-  background: #a67bfa;
+  background: #ff8c00;
   cursor: pointer;
 }
 
@@ -85,7 +85,7 @@ header {
   width: 100%;
   height: 100%;
   max-width: 550px;
-  display: flex;
+  display: inline;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -161,7 +161,7 @@ nav > ul {
 }
 
 #hero input[type='submit']:hover {
-  background-color: #5271ff;
+  background-color: #ff8c00;
   color: white;
   transition: background-color 1s;
 }
@@ -173,7 +173,7 @@ nav > ul {
 }
 
 #what_we_do {
-  margin-top: 250px;
+  margin-top: 200px;
 }
 
 #what_we_do .icon {
@@ -182,11 +182,11 @@ nav > ul {
   justify-content: center;
   height: 125px;
   width: 20vw;
-  color: #5271ff;
+  color: #ff8c00;
 }
 
 @media (max-width: 550px) {
-  #how_it_works .icon {
+  #what_we_do .icon {
     display: none;
   }
 }
@@ -246,7 +246,7 @@ nav > ul {
 }
 
 .our_people > .level {
-  background-color: #5271ff;
+  background-color: #ff8c00;
   color: white;
   padding: 15px 0;
   width: 100%;
@@ -257,7 +257,7 @@ nav > ul {
 .our_people > h2 {
   margin-top: 15px;
   margin-bottom: 15px;
-  color: #ff914d;
+  color: #ff8c00;
 }
 
 .our_people > ul {
@@ -276,13 +276,13 @@ nav > ul {
 }
 
 .our_people > button:hover {
-  background-color: #5271ff;
+  background-color: #ff8c00;
   color: white;
   transition: background-color 1s;
 }
 
 @media (max-width: 800px) {
-  #pricing {
+  #our_people {
     flex-direction: column;
   }
   .our_people {
@@ -293,9 +293,19 @@ nav > ul {
   }
 }
 
+.find_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 175px;
+}
+
 footer {
   margin-top: 30px;
-  background-color: #5271ff;
+  background-color: #ff8c00;
   padding: 20px;
 }
 
