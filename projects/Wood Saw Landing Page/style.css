@@ -15,6 +15,10 @@ h2 {
   font-family: 'Kaushan Script', cursive;
 }
 
+#page-title{
+  margin-left: 15px;
+}
+
 #page-wrapper {
   position: relative;
 }
