@@ -1,19 +1,19 @@
-h1,h2,h3,h4,h5,h6 {font-family: "Megrim"}
-body {font-family: "Open-Sans"}
+
 
 /*headings in welcome section*/
 h1{
   color:#f2f2f2;
   font-size: 60px;
-  padding-left: 15%;
-  padding-top: 10%;
+  margin: auto;
+  padding: 12% 0 2em 0;
+  font-family: "Megrim", "Times New Roman", serif;
 }
 
 h2{
   color:#f2f2f2;
   font-size: 40px;
-  padding-left: 15%;
-  margin: 0;
+  margin: 1em;
+  font-family: "Megrim", "Times New Roman", serif;
 }
 
 /*page headings*/
@@ -22,22 +22,26 @@ h3{
   font-size: 40px;
   padding: 30px;
   text-align: center;
+  font-family: "Megrim", "Times New Roman", serif;
 }
 
 /* footer text */
 h5{
   color:#f2f2f2;
+  font-family: "Megrim", "Times New Roman", serif;
+}
+
+header{
+  clear: both;
   padding-left: 15%;
 }
 
-
-#profile-link{
-  padding-left: 15%;
-  
+header img{
+  width: 100px;
 }
 
 /*background image for welcome section with shading*/
-#hero-image{
+.hero-image{
   background: var(--color-shadow);
     background-image: linear-gradient(
         90deg,
@@ -52,42 +56,45 @@ h5{
 
 }
 
-#welcome-section{
-  width: auto;
-  height: 100vh;
-  
-}
-
 body {
-  margin: 0;
   font-family: Open-Sans, Arial, sans-serif;
 }
 
-.topnav {
-  overflow: hidden;
+nav {
   width: 100%;
   background-color: #333;
   position: fixed;
-  top: 0;
 }
-  
+
+.topnav img{
+  width: 32px;
+  padding: 1em;
+
+}
+
+.topnav li {
+  display: inline;
+}
+
+topnav:last-child {
+    float: right;
+}
+
 .topnav a {
   float: left;
-  display: block;
   font-family: "Megrim";
   font-size: 22px;
   color: #f2f2f2;
   text-align: center;
-  padding: 1em;
-  text-decoration: none;
 }
   
 .topnav a:hover {
   background-color: rgb(212, 105, 105);
 }
 
-.topnav-right {
-  float: right;
+#welcome-section{
+  width: auto;
+  height: 100vh;
 }
 
 .container {
@@ -95,13 +102,13 @@ body {
 
 }
 
-#projects{
+.projects{
   width: 100%;
   min-height: 100%vh;
   margin: auto;
 }
 
-.project-tile{
+.projects img{
   border-radius: 8px;
 }
 
@@ -116,16 +123,19 @@ body {
 footer {
   margin-top: 30px;
   background-color: #333;
-  display: block;
   padding: 1em;
+}
+
+footer li{
+  display: inline;
 }
 
 footer a:hover {
   background-color: rgb(212, 105, 105);
 }
 
-footer > span {
-  float: right;
+footer span {
+  justify-content: right;
   font-size: 16px;
   color: #ffffff;
 }
