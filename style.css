@@ -1,4 +1,62 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+===========================================================
+BASIC LAYOUT
+===========================================================
+*/
+
+
+body {
+  font-family: Open-Sans, Arial, sans-serif;
+}
 
 /*headings in welcome section*/
 h1{
@@ -31,6 +89,15 @@ h5{
   font-family: "Megrim", "Times New Roman", serif;
 }
 
+
+
+/* 
+=========================================================
+HEADER STYLES
+=========================================================
+*/
+
+
 header{
   clear: both;
   padding-left: 15%;
@@ -38,26 +105,6 @@ header{
 
 header img{
   width: 100px;
-}
-
-/*background image for welcome section with shading*/
-.hero-image{
-  background: var(--color-shadow);
-    background-image: linear-gradient(
-        90deg,
-        rgba(0,0,0,0.9),
-        rgba(0,0,0,0) 65%,
-        rgba(0,0,0,0.9)
-      ),
-    url(images/header-bg1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-
-body {
-  font-family: Open-Sans, Arial, sans-serif;
 }
 
 nav {
@@ -76,7 +123,7 @@ nav {
   display: inline;
 }
 
-topnav:last-child {
+.topnav:last-child {
     float: right;
 }
 
@@ -92,15 +139,38 @@ topnav:last-child {
   background-color: rgb(212, 105, 105);
 }
 
+/* 
+==========================================================
+WELCOME SECTION
+==========================================================
+ */
+
+/*background image for welcome section with shading*/
+.hero-image{
+  background: var(--color-shadow);
+    background-image: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.9),
+        rgba(0,0,0,0) 65%,
+        rgba(0,0,0,0.9)
+      ),
+    url(images/header-bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
 #welcome-section{
   width: auto;
   height: 100vh;
 }
 
-.container {
-  display: block;
-
-}
+/* 
+==========================================================
+PROJECTS SECTION
+==========================================================
+ */
 
 .projects{
   width: 100%;
@@ -119,6 +189,12 @@ topnav:last-child {
   grid-gap: 20px;
   justify-content: center;
 }
+
+/*
+==============================================
+FOOTER STYLES
+==============================================
+*/
 
 footer {
   margin-top: 30px;
@@ -140,7 +216,12 @@ footer span {
   color: #ffffff;
 }
 
-/*Responsive layout*/
+/*
+==============================================
+Responsive layout
+==============================================
+*/
+
 @media (max-width: 600px) {
   .grid-container  {
     display: flex;
