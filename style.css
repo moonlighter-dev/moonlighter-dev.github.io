@@ -47,26 +47,37 @@ table {
 	border-spacing: 0;
 }
 
+/* 
+===========================================================
+BASIC LAYOUT
+===========================================================
+*/
+
+
+body {
+  font-family: Open-Sans, Arial, sans-serif;
+  font-size: 62.5%;
+}
+
 /*headings in welcome section*/
 h1{
   color:#f2f2f2;
-  font-size: 6rem;
-  margin: auto;
-  padding: 12% 0 2em 0;
+  font-size: 4rem;
+  padding: 12% 0 1rem 0;
   font-family: "Megrim", "Times New Roman", serif;
 }
 
 h2{
   color:#f2f2f2;
-  font-size: 3rem;
-  margin: 1em;
+  font-size: 2.5rem;
+  margin: 1rem;
   font-family: "Megrim", "Times New Roman", serif;
 }
 
 /*page headings*/
 h3{
   color:#333;
-  font-size: 4rem;
+  font-size: 2.5rem;
   padding: 3rem;
   text-align: center;
   font-family: "Megrim", "Times New Roman", serif;
@@ -78,14 +89,58 @@ h5{
   font-family: "Megrim", "Times New Roman", serif;
 }
 
-header{
-  clear: both;
-  padding-left: 2rem;
+
+
+/* 
+=========================================================
+HEADER STYLES
+=========================================================
+*/
+
+header {
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  padding: 0 1rem;
 }
 
-header img{
-  width: 3rem;
+nav img{
+  width: 32px;
+
 }
+
+nav li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
+    float: right;
+}
+
+nav a {
+  font-family: "Megrim";
+  font-size: 22px;
+  color: #f2f2f2;
+  text-align: center;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+  
+nav a:hover {
+  background-color: rgb(212, 105, 105);
+}
+
+/* 
+==========================================================
+WELCOME SECTION
+==========================================================
+ */
 
 /*background image for welcome section with shading*/
 .hero-image{
@@ -103,56 +158,26 @@ header img{
 
 }
 
-body {
-  font-family: Open-Sans, Arial, sans-serif;
-  font-size: 62.5%;
+
+main{
+  clear: both;
+  padding-left: 5%;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-nav {
-  height: 5%;
-  width: 100%;
-  background-color: #333;
-  position: fixed;
-}
-
-.topnav img{
-  max-width: 2rem;
-  padding: 1em;
-}
-
-.topnav li {
-  display: inline;
-}
-  
-.topnav a:hover {
-  background-color: rgb(212, 105, 105);
-}
-
-.left {
-  font-family: "Megrim";
-  font-size: 22px;
-  color: #f2f2f2;
-  text-align: center;
-  float: left;
-  width: 20%;
-  height: 100%;
-}
-
-.right {
-  float: right;
-  width: 30%;
-  text-align: right;
+main img{
+  width: 100px;
 }
 
 #welcome-section{
   width: auto;
   height: 100vh;
 }
+
+/* 
+==========================================================
+PROJECTS SECTION
+==========================================================
+ */
 
 .projects{
   width: 100%;
@@ -171,6 +196,12 @@ nav {
   grid-gap: 20px;
   justify-content: center;
 }
+
+/*
+==============================================
+FOOTER STYLES
+==============================================
+*/
 
 footer {
   margin-top: 30px;
@@ -192,7 +223,12 @@ footer span {
   color: #ffffff;
 }
 
-/*Responsive layout*/
+/*
+==============================================
+Responsive layout
+==============================================
+*/
+
 @media (max-width: 600px) {
   .grid-container  {
     display: flex;
