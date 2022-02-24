@@ -56,21 +56,22 @@ BASIC LAYOUT
 
 body {
   font-family: Open-Sans, Arial, sans-serif;
+  font-size: 62.5%;
 }
 
 /*headings in welcome section*/
 h1{
   color:#f2f2f2;
-  font-size: 60px;
+  font-size: 5rem;
   margin: auto;
-  padding: 12% 0 2em 0;
+  padding: 12% 0 1rem 0;
   font-family: "Megrim", "Times New Roman", serif;
 }
 
 h2{
   color:#f2f2f2;
-  font-size: 40px;
-  margin: 1em;
+  font-size: 3rem;
+  margin: 1rem;
   font-family: "Megrim", "Times New Roman", serif;
 }
 
@@ -100,7 +101,7 @@ HEADER STYLES
 
 header{
   clear: both;
-  padding-left: 15%;
+  padding-left: 5%;
 }
 
 header img{
