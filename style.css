@@ -62,15 +62,14 @@ body {
 /*headings in welcome section*/
 h1{
   color:#f2f2f2;
-  font-size: 5rem;
-  margin: auto;
+  font-size: 4rem;
   padding: 12% 0 1rem 0;
   font-family: "Megrim", "Times New Roman", serif;
 }
 
 h2{
   color:#f2f2f2;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 1rem;
   font-family: "Megrim", "Times New Roman", serif;
 }
@@ -78,8 +77,8 @@ h2{
 /*page headings*/
 h3{
   color:#333;
-  font-size: 40px;
-  padding: 30px;
+  font-size: 2.5rem;
+  padding: 3rem;
   text-align: center;
   font-family: "Megrim", "Times New Roman", serif;
 }
@@ -98,45 +97,39 @@ HEADER STYLES
 =========================================================
 */
 
-
-header{
-  clear: both;
-  padding-left: 5%;
-}
-
-header img{
-  width: 100px;
-}
-
-nav {
+header {
   width: 100%;
   background-color: #333;
   position: fixed;
+  padding: 0 1rem;
 }
 
-.topnav img{
+nav img{
   width: 32px;
-  padding: 1em;
 
 }
 
-.topnav li {
-  display: inline;
+nav li {
+  display: inline-block;
+  padding: 1rem;
 }
 
-.topnav:last-child {
+.topnav-left {
+  float: left;
+}
+
+.topnav-right {
     float: right;
 }
 
-.topnav a {
-  float: left;
+nav a {
   font-family: "Megrim";
   font-size: 22px;
   color: #f2f2f2;
   text-align: center;
 }
   
-.topnav a:hover {
+nav a:hover {
   background-color: rgb(212, 105, 105);
 }
 
@@ -160,6 +153,16 @@ WELCOME SECTION
     background-repeat: no-repeat;
     background-position: center;
 
+}
+
+
+main{
+  clear: both;
+  padding-left: 5%;
+}
+
+main img{
+  width: 100px;
 }
 
 #welcome-section{
