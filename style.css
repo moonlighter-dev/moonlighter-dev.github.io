@@ -89,8 +89,6 @@ h5{
   font-family: "Megrim", "Times New Roman", serif;
 }
 
-
-
 /* 
 =========================================================
 HEADER STYLES
@@ -116,6 +114,7 @@ nav li {
 
 .topnav-left {
   float: left;
+  height: 100%;
 }
 
 .topnav-right {
@@ -130,10 +129,9 @@ nav a {
   text-align: center;
   float: left;
   width: 20%;
-  height: 100%;
 }
   
-nav a:hover {
+nav li:hover {
   background-color: rgb(212, 105, 105);
 }
 
@@ -210,10 +208,9 @@ footer {
   width: 100%;
   height: 3rem;
   background-color: #333;
-  
 }
 
-footer ul {
+footer nav {
   float: left;
   width: 25%;
 }
@@ -228,7 +225,7 @@ footer section {
   width: 25%;
 }
 
-footer a:hover {
+footer li:hover {
   background-color: rgb(212, 105, 105);
 }
 
