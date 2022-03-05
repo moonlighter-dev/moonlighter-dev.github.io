@@ -110,11 +110,11 @@ nav img{
 nav li {
   display: inline-block;
   padding: 1rem;
+  line-height: 2rem;
 }
 
 .topnav-left {
   float: left;
-  height: 100%;
 }
 
 .topnav-right {
@@ -124,11 +124,11 @@ nav li {
 
 nav a {
   font-family: "Megrim";
-  font-size: 22px;
+  font-size: 2rem;
   color: #f2f2f2;
   text-align: center;
-  float: left;
   width: 20%;
+  text-decoration: none;
 }
   
 nav li:hover {
@@ -206,18 +206,12 @@ FOOTER STYLES
 
 footer {
   width: 100%;
-  height: 3rem;
+  height: 4.5rem;
   background-color: #333;
 }
 
 footer nav {
   float: left;
-  width: 25%;
-}
-
-footer li{
-
-  display: inline;
 }
 
 footer section {
@@ -225,14 +219,11 @@ footer section {
   width: 25%;
 }
 
-footer li:hover {
-  background-color: rgb(212, 105, 105);
-}
-
 footer span {
+  line-height: 4.5rem;
   text-align: right;
   font-size: 1rem;
-  color: #ffffff;
+  color: #fff;
 }
 
 /*
