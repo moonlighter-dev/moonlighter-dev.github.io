@@ -178,6 +178,11 @@ main a {
   font-weight: 700;
 }
 
+main a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
 /* 
 ==========================================================
 PROJECTS SECTION
