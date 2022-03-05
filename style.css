@@ -55,14 +55,14 @@ BASIC LAYOUT
 
 
 body {
-  font-family: Open-Sans, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 62.5%;
 }
 
 /*headings in welcome section*/
 h1{
   color:#f2f2f2;
-  font-size: 4rem;
+  font-size: 5rem;
   padding: 12% 0 1rem 0;
   font-family: "Megrim", "Times New Roman", serif;
 }
@@ -71,7 +71,6 @@ h2{
   color:#f2f2f2;
   font-size: 2.5rem;
   margin: 1rem;
-  font-family: "Megrim", "Times New Roman", serif;
 }
 
 /*page headings*/
@@ -80,13 +79,6 @@ h3{
   font-size: 2.5rem;
   padding: 3rem;
   text-align: center;
-  font-family: "Megrim", "Times New Roman", serif;
-}
-
-/* footer text */
-h5{
-  color:#f2f2f2;
-  font-family: "Megrim", "Times New Roman", serif;
 }
 
 /* 
@@ -103,13 +95,14 @@ header {
 }
 
 nav img{
-  width: 32px;
-
+  width: 2rem;
+  
 }
 
 nav li {
   display: inline-block;
   padding: 1rem;
+  height: 2rem;
   line-height: 2rem;
 }
 
@@ -124,7 +117,7 @@ nav li {
 
 nav a {
   font-family: "Megrim";
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #f2f2f2;
   text-align: center;
   width: 20%;
@@ -147,16 +140,15 @@ WELCOME SECTION
     background-image: linear-gradient(
         90deg,
         rgba(0,0,0,0.9),
-        rgba(0,0,0,0) 65%,
-        rgba(0,0,0,0.9)
+        rgba(255,255,255,0) 65%,
+        rgba(255,255,255,0.7)
       ),
-    url(images/header-bg1.png);
+    url(images/mountain\ bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 }
-
 
 main{
   clear: both;
@@ -174,26 +166,38 @@ main img{
   height: 100vh;
 }
 
+main a {
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  margin: 1rem;
+  display: inline-block;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
 /* 
 ==========================================================
 PROJECTS SECTION
 ==========================================================
  */
 
-.projects{
+#projects section{
   width: 100%;
-  min-height: 100%vh;
+  min-height: 50vh;
   margin: 0 auto 3rem auto;
 }
 
-.projects img{
+.grid-container img{
   border-radius: 8px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 300px;
   grid-gap: 20px;
   justify-content: center;
 }
@@ -206,7 +210,7 @@ FOOTER STYLES
 
 footer {
   width: 100%;
-  height: 4.5rem;
+  height: 4rem;
   background-color: #333;
 }
 
