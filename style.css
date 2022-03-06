@@ -57,25 +57,26 @@ BASIC LAYOUT
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 62.5%;
+  background-color: #333;
 }
 
 /*headings in welcome section*/
 h1{
-  color:#f2f2f2;
+  color:#fff;
   font-size: 5rem;
   padding: 12% 0 1rem 0;
   font-family: "Megrim", "Times New Roman", serif;
 }
 
 h2{
-  color:#f2f2f2;
+  color: #fff;
   font-size: 2.5rem;
   margin: 1rem;
 }
 
 /*page headings*/
 h3{
-  color:#333;
+  color:#fff;
   font-size: 2.5rem;
   padding: 3rem;
   text-align: center;
@@ -118,7 +119,7 @@ nav li {
 nav a {
   font-family: "Megrim";
   font-size: 1.5rem;
-  color: #f2f2f2;
+  color: #fff;
   text-align: center;
   width: 20%;
   text-decoration: none;
@@ -179,7 +180,7 @@ main a {
 }
 
 main a:hover {
-  background-color: #333;
+  background-color: rgb(212, 105, 105);
   color: #fff;
 }
 
@@ -196,7 +197,7 @@ PROJECTS SECTION
 }
 
 .grid-container img{
-  border-radius: 8px;
+  border-radius: 8%;
 }
 
 .grid-container {
