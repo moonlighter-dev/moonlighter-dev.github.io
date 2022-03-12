@@ -21,6 +21,10 @@
 /* BASE STYLES
 /*******************************************/
 
+html {
+  font-size: 80%;
+}
+
 @font-face {
   font-family: "She-Ra";
   src: url(Shera-MqWe.ttf);
