@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="This is a game. Normal people call it Rock Paper Scissors. She-Ra fans call it Bot Shield Laser.">
+  	<meta name="keywords" content="game, She-Ra, bot, logic, Lonnie, Kyle, Rogelio">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Bot/Shield/Laser Game</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<section>
+			<h2>Bot! - Shield! - Laser!</h2>
+			<h3 id="instructions">Select a Weapon to Start Playing!</h3>
+			</section>
+			<section class="scoreboard hidden">
+				<table>
+					<th colspan="4">Score</th>
+					<tr>
+						<td>You</td>
+						<td id="userScore">0</td>
+						<td>AI</td>
+						<td id="aiScore">0</td>
+					</tr>
+				</table>
+			</section>
+		</header>
+			<main>
+				<section class="container">
+					<section class="textResult hidden">
+						<h3 id="results"></h3>
+					</section>
+					<section class="imgResult">
+						<img id="botBeatsLaser" class="hidden" src="assets/bot beats laser action.png">
+						<img id="laserBeatsShield" class="hidden" src="assets/laser beats shield.png">
+						<img id="shieldBeatsBot" class="hidden" src="assets/shield beats bot.png">
+						<img id="tie" class="hidden" src="assets/seriously kyle.png">
+					</section>
+				</section>
+			<section class="playArea">
+				<ul>
+					<button id="bot" type="button" name="button">Bot</button>
+					<button id="shield" type="button" name="button">Shield</button>
+					<button id="laser" type="button" name="button">Laser</button>
+				</ul>
+			</section>
+			</main>
+		<footer>
+			<section>
+				<p>This game was made for the pure fun of it by <a href="https://danaarroway.com">Dana Arroway</a></p>
+			</section>
+
+			<section>
+				<p>Thanks to JoannaVu for the awesome<a href="https://www.fontspace.com/shera-font-f31057"> She-Ra font!</a></p>
+			</section>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
