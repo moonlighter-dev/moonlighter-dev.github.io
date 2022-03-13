@@ -144,7 +144,7 @@ WELCOME SECTION
         rgba(255,255,255,0) 65%,
         rgba(255,255,255,0.7)
       ),
-    url(images/mountain\ bg.png);
+    url(images/mountain-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -154,7 +154,7 @@ WELCOME SECTION
 main{
   clear: both;
   width: 50%;
-  padding-left: 5%;
+  padding: 5% 0 0 5%;
 }
 
 main img{
@@ -197,7 +197,6 @@ PROJECTS SECTION
 }
 
 .clients {
-  clear: both;
   margin: 0 auto;
   padding-bottom: 3rem;
 }
@@ -228,6 +227,7 @@ footer {
 
 footer nav {
   float: left;
+  display: none;
 }
 
 footer section {
@@ -248,8 +248,17 @@ Responsive layout
 ==============================================
 */
 
-@media (max-width: 600px) {
-  .grid-container  {
-    display: flex;
+@media all and (max-width: 700px) {
+  html {
+    font-size: 75%;
+  }
+  body {
+    background-position: center;
+  }
+  .topnav-right {
+    display: none;
+  }
+  footer nav {
+    display: contents;
   }
 }
