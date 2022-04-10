@@ -148,6 +148,7 @@ WELCOME SECTION
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 
 }
 
@@ -193,7 +194,7 @@ PROJECTS SECTION
 .projects {
   width: 100%;
   min-height: 50vh;
-  margin: 0 auto 3rem auto;
+  margin: 1rem auto 3rem auto;
 }
 
 .clients {
