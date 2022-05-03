@@ -168,7 +168,7 @@ main img{
   height: 100vh;
 }
 
-main a {
+.btn {
   font-size: 1rem;
   text-decoration: none;
   background-color: #fff;
@@ -178,9 +178,10 @@ main a {
   display: inline-block;
   border-radius: 8px;
   font-weight: 700;
+  border: none;
 }
 
-main a:hover {
+.btn:hover {
   background-color: rgb(212, 105, 105);
   color: #fff;
 }
@@ -211,6 +212,37 @@ PROJECTS SECTION
   justify-content: center;
   align-content: space-around;
   gap: 2rem;
+}
+
+/* 
+==========================================================
+CONTACT SECTION
+==========================================================
+ */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20%
+}
+
+form label {
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+form input {
+  border-radius: 5px;
+  line-height: 1.5rem;
+}
+
+form span {
+  color: white;
+  text-align: right;
+  line-height: 1.5rem;
+  font-size: .75rem;
 }
 
 /*

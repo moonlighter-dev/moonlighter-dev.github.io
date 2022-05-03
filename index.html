@@ -38,7 +38,7 @@
             <h1>Dana Arroway</h1>
             <h2>Sofware Engineer<br>
             <h2>& Web Developer</h2>
-            <a href="#projects">View Portfolio</a>
+            <a class="btn" href="#projects">View Portfolio</a>
             </main>
 
 
@@ -58,8 +58,19 @@
                 <a href="http://www.ezdrugscreens.com" target="_blank"><img src="images/project-tiles/EZ Drug Screens Project Tile.png" alt="EZ Drug Screens Project Tile" height="300px"></a>
             </section>
         </section>
-        <section class="contact">
-            
+        <section class="contact" class="form">
+            <h3>Contact</h3>
+            <form method="post" action="form.php">
+                <label for="Name" class="label">Your name*</label>
+                    <input type="text" id="Name" name="Name" class="form-control" required>
+                <label for="Email" class="label">Your email address*</label>
+                    <input type="email" id="Email" name="Email" class="form-control" required>
+                <label for="Message" class="label">Your message*</label>
+                    <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
+                <span>* indicates a required field</span>
+                <button type="submit" id="button" class="btn">Send</button>
+
+            </form >
         </section>
         <footer>
             <section>
