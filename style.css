@@ -216,6 +216,7 @@ PROJECTS SECTION
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
   gap: 2rem;
@@ -285,14 +286,9 @@ footer {
   background-color: #333;
 }
 
-footer nav {
-  float: left;
-  display: none;
-}
-
 footer section {
-  float: right;
-  width: 30%;
+  text-align: center;
+  padding: 2rem;
 }
 
 footer span {
@@ -308,17 +304,15 @@ Responsive layout
 ==============================================
 */
 
-@media all and (max-width: 700px) {
+
+
+@media all and (max-width: 850px) {
   html {
-    font-size: 75%;
+    font-size: 80%;
   }
-  body {
-    background-position: center;
-  }
-  .topnav-right {
-    display: none;
-  }
-  footer nav {
-    display: contents;
-  }
+
+
+  
+  
+  
 }
