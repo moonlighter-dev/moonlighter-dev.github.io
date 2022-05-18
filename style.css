@@ -234,11 +234,10 @@ ABOUT SECTION
 
 .about img{
   border-radius: 50%;
-  position: relative;
-  left: 50vw;
+  
+  margin-left: 50vw;
   transform: translate(-50%);
   margin-bottom: 2rem;
-
   
 }
 
@@ -337,6 +336,8 @@ Responsive layout
     width: 3rem;
   }
   
-  
+  h1 {
+    padding-top: 20%;
+  }  
   
 }
