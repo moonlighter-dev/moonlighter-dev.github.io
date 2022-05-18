@@ -233,8 +233,12 @@ ABOUT SECTION
 
 .about img{
   border-radius: 50%;
-  margin-left: 35%;
+  position: relative;
+  left: 50vw;
+  transform: translate(-50%);
   margin-bottom: 2rem;
+
+  
 }
 
 /* 
