@@ -241,6 +241,11 @@ ABOUT SECTION
   
 }
 
+.bio {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 /* 
 ==========================================================
 CONTACT SECTION
@@ -338,6 +343,11 @@ Responsive layout
   
   h1 {
     padding-top: 20%;
-  }  
+  } 
+
+  .bio {
+    padding-left: 0;
+    padding-right: 0;
+  }
   
 }
