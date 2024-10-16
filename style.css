@@ -115,7 +115,6 @@ nav li {
 }
 
 .topnav-left {
-  display: none;
   float: left;
 }
 
@@ -162,20 +161,13 @@ WELCOME SECTION
 
 main{
   clear: both;
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 50%;
+  padding: 5% 0 0 5%;
 }
 
 main img{
-  margin-top: 50%;
-  border-radius: 50%;
-  /* margin-left: 50vw;
-  transform: translate(-50%); */
-  justify-content: center;
-  width: 33%;
+  margin: 2rem;
+  width: 4rem;
 }
 
 #welcome-section{
@@ -224,7 +216,7 @@ PROJECTS SECTION
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
   gap: 2rem;
@@ -241,7 +233,11 @@ ABOUT SECTION
 }
 
 .about img{
+  border-radius: 50%;
   
+  margin-left: 50vw;
+  transform: translate(-50%);
+  margin-bottom: 2rem;
   
 }
 
@@ -319,9 +315,9 @@ Responsive layout
     font-size: 80%;
   }
 
-  /* .topnav-left {
+  .topnav-left {
     display: none;
-  } */
+  }
 
   .topnav-right {
     width: 100%;
